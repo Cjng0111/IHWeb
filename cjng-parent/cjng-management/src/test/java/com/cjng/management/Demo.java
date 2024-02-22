@@ -19,7 +19,7 @@ public class Demo {
         // 从环境变量中获取访问凭证。运行本代码示例之前，请确保已设置环境变量OSS_ACCESS_KEY_ID和OSS_ACCESS_KEY_SECRET。
 //        EnvironmentVariableCredentialsProvider credentialsProvider = CredentialsProviderFactory.newEnvironmentVariableCredentialsProvider();
         String accessKeyId = "LTAI5tSedx96czDbg6tGmk3a";
-        String accessKeySecret = "W3nGnN6fmbs0fHfa8XXL2g4FABmDg8";
+        String accessKeySecret = ;
         // 填写Bucket名称，例如examplebucket。
         String bucketName = "web-cjng";
         // 填写Object完整路径，完整路径中不能包含Bucket名称，例如exampledir/exampleobject.txt。
