@@ -1,0 +1,110 @@
+.sidebar {
+    position: fixed;
+    right: -55px;
+    top: 30%;
+    z-index: 2;
+    font-family: "微软雅黑";
+    display: none;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+.sidebar .sb-item {
+    position: relative;
+    width: 70px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0px 0px 24px 0px rgba(4, 1, 1, 0.32);
+    cursor: pointer;
+}
+
+.sidebar .sb-item+.sb-item {
+    margin-top: 5px;
+}
+
+.sidebar .box {
+    position: relative;
+    right: 0;
+    width: 140px;
+    -webkit-transition: right .5s;
+    -ms-transition: right .5s;
+    transition: right .5s;
+}
+
+.sidebar .pop {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-top: -81px;
+    padding: 29px 33px 29px 29px;
+    background: url(../image/temp/png82.png) no-repeat;
+    display: none;
+}
+
+.sidebar .pop .img {
+    display: block;
+    width: 104px;
+    height: 104px;
+}
+
+.sidebar .ico {
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: url(../image/opacity-50.png);
+    -webkit-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.sidebar .ico img {
+    display: block;
+    width: 100%;
+}
+
+.sidebar .txt {
+    width: 70px;
+    height: 70px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #9a2929;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    display: none;
+}
+
+.sidebar .sb-wx:hover .ico {
+    display: none;
+}
+
+.sidebar .sb-wx:hover .txt {
+    display: block;
+}
+
+.sidebar .sb-wx:hover .pop {
+    display: block;
+}
+
+.sidebar.x-show {
+    display: block;
+}
+
+.sidebar:hover {
+    right: 0;
+}
+.middle-cont {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+.middle:after {
+    content: '0';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    font-size: 0;
+}
