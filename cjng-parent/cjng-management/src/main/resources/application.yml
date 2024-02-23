@@ -28,7 +28,7 @@ aliyun:
   oss:
     endpoint: https://oss-cn-hangzhou.aliyuncs.com
     accessKeyId: LTAI5tSedx96czDbg6tGmk3a
-    accessKeySecret: W3nGnN6fmbs0fHfa8XXL2g4FABmDg8
+    accessKeySecret:
     bucketName: web-cjng
 
 # 日志配置
