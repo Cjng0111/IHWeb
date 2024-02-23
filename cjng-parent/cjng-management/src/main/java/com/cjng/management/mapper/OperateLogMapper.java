@@ -5,6 +5,10 @@ import com.cjng.management.pojo.OperateLog;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 
+/**
+ * @Description:
+ * 增删改的操作日志
+ * */
 @Mapper
 public interface OperateLogMapper {
 

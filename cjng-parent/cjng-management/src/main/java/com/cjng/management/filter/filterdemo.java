@@ -12,6 +12,10 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
 
+/**
+ * @Description:
+ * Java项目的过滤器实现，已被弃用
+ * */
 @Slf4j
 //@WebFilter(urlPatterns = "/*")
 public class filterdemo implements Filter {

@@ -11,6 +11,10 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
+/**
+ * @Description:
+ * 处理登录拦截的Java拦截器，检查jwt
+ * */
 @Slf4j
 @Component
 public class LoginCheckInterceptor implements HandlerInterceptor {

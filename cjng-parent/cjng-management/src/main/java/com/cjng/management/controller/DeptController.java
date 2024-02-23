@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * 部门管理Controller
+ * @Description:
+ * 使用Spring框架的RESTful API控制器
  */
 @Slf4j
 @RestController

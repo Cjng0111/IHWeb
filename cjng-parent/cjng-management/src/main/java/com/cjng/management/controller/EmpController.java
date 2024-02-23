@@ -7,6 +7,8 @@ import com.cjng.management.pojo.Result;
 import com.cjng.management.service.EmpService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Scope;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,11 +16,14 @@ import java.time.LocalDate;
 import java.util.List;
 
 /**
- * 员工管理Controller
+ * @Description:
+ * 使用Spring框架的RESTful API控制器
  */
 @Slf4j
 @RestController
 @RequestMapping("/emps")
+@Scope("prototype")// 原型模式，实现多例
+@Lazy// 懒加载
 public class EmpController {
     @Autowired
     private EmpService empService;

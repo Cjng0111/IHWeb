@@ -31,6 +31,7 @@
         </set>
         where id = #{id}
     </update>
+
     <select id="list" resultType="com.cjng.management.pojo.Emp">
         select * from emp
         <where>

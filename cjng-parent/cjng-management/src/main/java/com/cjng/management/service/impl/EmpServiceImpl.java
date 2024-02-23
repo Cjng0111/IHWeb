@@ -18,7 +18,7 @@ public class EmpServiceImpl implements EmpService {
 
     @Autowired
     private EmpMapper empMapper;
-
+    // 分页查询朴素版
 //    @Override
 //    public PageBean page(Integer page, Integer pageSize) {
 //        Integer count = empMapper.count();
@@ -27,6 +27,7 @@ public class EmpServiceImpl implements EmpService {
 //        return new PageBean(count,empList);
 //    }
 
+    // 分页查询PageHelper版
     @Override
     public PageBean page(Integer page, Integer pageSize, String name, Short gender, LocalDate begin, LocalDate end) {
         PageHelper.startPage(page, pageSize);

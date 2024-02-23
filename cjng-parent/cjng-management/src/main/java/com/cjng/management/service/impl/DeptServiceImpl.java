@@ -19,8 +19,8 @@ public class DeptServiceImpl implements DeptService {
     private DeptMapper deptMapper;
     @Autowired
     private EmpMapper empMapper;
-    @Autowired
-    private DeptLogServiceImpl deptLogService;
+//    @Autowired
+//    private DeptLogServiceImpl deptLogService;
 
     @Override
     public List<Dept> list() {

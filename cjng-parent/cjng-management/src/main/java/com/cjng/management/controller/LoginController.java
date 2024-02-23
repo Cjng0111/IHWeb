@@ -13,6 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @Description:
+ * 使用Spring框架的RESTful API控制器
+ */
 @Slf4j
 @RestController
 public class LoginController {

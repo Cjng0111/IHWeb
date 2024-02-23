@@ -10,22 +10,26 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 
+/**
+ * @Description:
+ * 使用Spring框架的RESTful API控制器，使用阿里云处理文件上传请求
+ */
 @Slf4j
 @RestController
 public class UploadController {
 
     //upload.html本地存储实验
-//    @PostMapping("/upload")
-//    public Result upload(String username, Integer age, MultipartFile image) throws IOException {
-//        log.info("username: {}, age: {}, image: {}", username, age, image.getOriginalFilename());
-//        String fileName = image.getOriginalFilename();
-//        int index = fileName.lastIndexOf(".");
-//        String substring = fileName.substring(index);
-//        String newFileName = UUID.randomUUID().toString() + substring;
-//        log.info("newFileName: {}", newFileName);
-//        image.transferTo(new File("E:\\Dark horse\\" + newFileName));
-//        return Result.success();
-//    }
+    /*@PostMapping("/upload")
+    public Result upload(String username, Integer age, MultipartFile image) throws IOException {
+        log.info("username: {}, age: {}, image: {}", username, age, image.getOriginalFilename());
+        String fileName = image.getOriginalFilename();
+        int index = fileName.lastIndexOf(".");
+        String substring = fileName.substring(index);
+        String newFileName = UUID.randomUUID().toString() + substring;
+        log.info("newFileName: {}", newFileName);
+        image.transferTo(new File("E:\\Dark horse\\" + newFileName));
+        return Result.success();
+    }*/
 
     @Autowired
     private AliOSSUtils aliOSSUtils;
